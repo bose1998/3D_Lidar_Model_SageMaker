@@ -1,0 +1,1942 @@
+{
+	"annotations": [
+		{
+			"id": "6214a7eb6937efeeffc34162",
+			"datasetId": "61df2c877e42622a71758961",
+			"type": "cube_3d",
+			"label": "Vehicle.Truck",
+			"attributes": [],
+			"metadata": {
+				"system": {
+					"status": null,
+					"startTime": 0,
+					"endTime": 200,
+					"frame": 0,
+					"endFrame": 200,
+					"snapshots_": [],
+					"parentId": null,
+					"clientId": "ffbf0b57-bd11-4b95-b370-124bf893a44f",
+					"automated": false,
+					"objectId": "7",
+					"isOpen": false,
+					"isOnlyLocal": false,
+					"frameNumberBased": true,
+					"attributes": {},
+					"clientParentId": null,
+					"system": false,
+					"description": null,
+					"itemLinks": [],
+					"openAnnotationVersion": "1.32.3-prod.8",
+					"recipeId": "61d6a9d1090fd05f635b17d0"
+				},
+				"user": {}
+			},
+			"creator": "avi@dataloop.ai",
+			"createdAt": "2022-02-22T09:07:55.919Z",
+			"updatedBy": "diwakar.negi@tcs.com",
+			"updatedAt": "2022-02-24T05:02:30.337Z",
+			"itemId": "61e06e0467146c2a1bfd3b9b",
+			"url": "https://gate.dataloop.ai/api/v1/annotations/6214a7eb6937efeeffc34162",
+			"item": "https://gate.dataloop.ai/api/v1/items/61e06e0467146c2a1bfd3b9b",
+			"dataset": "https://gate.dataloop.ai/api/v1/datasets/61df2c877e42622a71758961",
+			"hash": "317a9d67fc54c955a079ce2e7c931ff456793d21",
+			"source": "ui",
+			"coordinates": {
+				"position": {
+					"x": 10.975440954163523,
+					"y": 7.424404429062657,
+					"z": 1.879048959002235
+				},
+				"scale": {
+					"x": 12.303561023046273,
+					"y": 3.4231028877933986,
+					"z": 3.724976863648625
+				},
+				"rotation": {
+					"x": -0.00722012735164924,
+					"y": -0.011940745135351597,
+					"z": 0.5182628870807403
+				}
+			}
+		},
+		{
+			"id": "6214a7eb6937ef26b4c34163",
+			"datasetId": "61df2c877e42622a71758961",
+			"type": "cube_3d",
+			"label": "Vehicle.Truck",
+			"attributes": [],
+			"metadata": {
+				"system": {
+					"status": null,
+					"startTime": 0,
+					"endTime": 200,
+					"frame": 0,
+					"endFrame": 200,
+					"snapshots_": [],
+					"parentId": null,
+					"clientId": "6fd7c7ca-b1dd-4533-a9f8-bf0534ec5c89",
+					"automated": false,
+					"objectId": "8",
+					"isOpen": false,
+					"isOnlyLocal": false,
+					"frameNumberBased": true,
+					"attributes": {},
+					"clientParentId": null,
+					"system": false,
+					"description": null,
+					"itemLinks": [],
+					"openAnnotationVersion": "1.32.3-prod.8",
+					"recipeId": "61d6a9d1090fd05f635b17d0"
+				},
+				"user": {}
+			},
+			"creator": "avi@dataloop.ai",
+			"createdAt": "2022-02-22T09:07:55.920Z",
+			"updatedBy": "diwakar.negi@tcs.com",
+			"updatedAt": "2022-02-24T05:02:30.340Z",
+			"itemId": "61e06e0467146c2a1bfd3b9b",
+			"url": "https://gate.dataloop.ai/api/v1/annotations/6214a7eb6937ef26b4c34163",
+			"item": "https://gate.dataloop.ai/api/v1/items/61e06e0467146c2a1bfd3b9b",
+			"dataset": "https://gate.dataloop.ai/api/v1/datasets/61df2c877e42622a71758961",
+			"hash": "11e03a9628c108eaa86ac2dd1ec091e5d7a0c61a",
+			"source": "ui",
+			"coordinates": {
+				"position": {
+					"x": 8.054473892196715,
+					"y": 9.82526114436323,
+					"z": 1.9855451576841346
+				},
+				"scale": {
+					"x": 9.60130470176287,
+					"y": 3.0518122831578089,
+					"z": 3.8534383417985555
+				},
+				"rotation": {
+					"x": -0.007621630331916688,
+					"y": -0.015942552225354447,
+					"z": 0.5385501536565681
+				}
+			}
+		},
+		{
+			"id": "6214a88c7c7029fdac216584",
+			"datasetId": "61df2c877e42622a71758961",
+			"type": "cube_3d",
+			"label": "Vehicle.Car",
+			"attributes": [],
+			"metadata": {
+				"system": {
+					"status": null,
+					"startTime": 0,
+					"endTime": 200,
+					"frame": 0,
+					"endFrame": 200,
+					"snapshots_": [
+						{
+							"fixed": true,
+							"type": "ATTRIBUTE_CHANGE",
+							"frame": 1,
+							"objectVisible": true,
+							"data": {
+								"position": {
+									"x": -6.568681934166731,
+									"y": 18.69941476243046,
+									"z": 1
+								},
+								"scale": {
+									"x": -1.6110770568471445,
+									"y": 4.1923899697978659,
+									"z": 2
+								},
+								"rotation": {
+									"x": 0,
+									"y": 0,
+									"z": 0.5329742077013163
+								}
+							},
+							"label": "Vehicle.Car",
+							"attributes": [],
+							"namedAttributes": {}
+						}
+					],
+					"parentId": null,
+					"clientId": "5537321d-208b-4e5a-8d77-3314e8232b07",
+					"automated": false,
+					"objectId": "9",
+					"isOpen": false,
+					"frameNumberBased": true,
+					"attributes": {},
+					"clientParentId": null,
+					"system": false,
+					"description": null,
+					"itemLinks": [],
+					"openAnnotationVersion": "1.32.3-prod.8",
+					"recipeId": "61d6a9d1090fd05f635b17d0"
+				},
+				"user": {}
+			},
+			"creator": "avi@dataloop.ai",
+			"createdAt": "2022-02-22T09:10:36.804Z",
+			"updatedBy": "diwakar.negi@tcs.com",
+			"updatedAt": "2022-02-24T10:16:24.272Z",
+			"itemId": "61e06e0467146c2a1bfd3b9b",
+			"url": "https://gate.dataloop.ai/api/v1/annotations/6214a88c7c7029fdac216584",
+			"item": "https://gate.dataloop.ai/api/v1/items/61e06e0467146c2a1bfd3b9b",
+			"dataset": "https://gate.dataloop.ai/api/v1/datasets/61df2c877e42622a71758961",
+			"hash": "ea9fff9ed17e2fe2d4046a476c34a7a8dcfd3d92",
+			"source": "unknown",
+			"coordinates": {
+				"position": {
+					"x": -6.759498291886429,
+					"y": 18.782237463072787,
+					"z": 1.0000144559537816
+				},
+				"scale": {
+					"x": -1.7264082327155344,
+					"y": 4.1923899697978659,
+					"z": 2
+				},
+				"rotation": {
+					"x": -0.0022947811663785019,
+					"y": -0.005187831294548718,
+					"z": 0.5817220696981906
+				}
+			}
+		},
+		{
+			"id": "6214a8c70db7b5fbd8af655f",
+			"datasetId": "61df2c877e42622a71758961",
+			"type": "cube_3d",
+			"label": "Vehicle.Truck",
+			"attributes": [],
+			"metadata": {
+				"system": {
+					"status": null,
+					"startTime": 0,
+					"endTime": 200,
+					"frame": 0,
+					"endFrame": 200,
+					"snapshots_": [
+						{
+							"fixed": true,
+							"type": "ATTRIBUTE_CHANGE",
+							"frame": 1,
+							"objectVisible": true,
+							"data": {
+								"position": {
+									"x": 15.0819889716049,
+									"y": 2.048778478778191,
+									"z": 2.02371757424115
+								},
+								"scale": {
+									"x": 13.71616032800622,
+									"y": 2.7205389188676807,
+									"z": 4.0059631449616719
+								},
+								"rotation": {
+									"x": 0,
+									"y": 0,
+									"z": 0.5274170982897144
+								}
+							},
+							"label": "Vehicle.Truck",
+							"attributes": [],
+							"namedAttributes": {}
+						}
+					],
+					"parentId": null,
+					"clientId": "fcbdad4e-9d6b-49dd-8039-e93181edf6a1",
+					"automated": false,
+					"objectId": "1",
+					"isOpen": false,
+					"isOnlyLocal": false,
+					"frameNumberBased": true,
+					"attributes": {},
+					"clientParentId": null,
+					"system": false,
+					"description": null,
+					"itemLinks": [],
+					"openAnnotationVersion": "1.32.3-prod.8",
+					"recipeId": "61d6a9d1090fd05f635b17d0"
+				},
+				"user": {}
+			},
+			"creator": "shmulik@dataloop.ai",
+			"createdAt": "2022-02-22T09:11:35.108Z",
+			"updatedBy": "diwakar.negi@tcs.com",
+			"updatedAt": "2022-02-24T10:20:30.685Z",
+			"itemId": "61e06e0467146c2a1bfd3b9b",
+			"url": "https://gate.dataloop.ai/api/v1/annotations/6214a8c70db7b5fbd8af655f",
+			"item": "https://gate.dataloop.ai/api/v1/items/61e06e0467146c2a1bfd3b9b",
+			"dataset": "https://gate.dataloop.ai/api/v1/datasets/61df2c877e42622a71758961",
+			"hash": "0ef50ba996ff6f3a277f1bd8daf557c7a151f364",
+			"source": "ui",
+			"coordinates": {
+				"position": {
+					"x": 15.367495323521743,
+					"y": 1.536960278740843,
+					"z": 2.0237175742411899
+				},
+				"scale": {
+					"x": 13.71616032800622,
+					"y": 2.7205389188676807,
+					"z": 4.0059631449616719
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0.5274170982897144
+				}
+			}
+		},
+		{
+			"id": "6214a9b16937ef545ac34379",
+			"datasetId": "61df2c877e42622a71758961",
+			"type": "cube_3d",
+			"label": "Vehicle.Truck",
+			"attributes": [],
+			"metadata": {
+				"system": {
+					"status": null,
+					"startTime": 0,
+					"endTime": 200,
+					"frame": 0,
+					"endFrame": 200,
+					"snapshots_": [],
+					"parentId": null,
+					"clientId": "a2c282fa-abf3-4fba-b0f2-b7b5a0f75ea0",
+					"automated": false,
+					"objectId": "10",
+					"isOpen": false,
+					"isOnlyLocal": false,
+					"frameNumberBased": true,
+					"attributes": {},
+					"clientParentId": null,
+					"system": false,
+					"description": null,
+					"itemLinks": [],
+					"openAnnotationVersion": "1.32.3-prod.8",
+					"recipeId": "61d6a9d1090fd05f635b17d0"
+				},
+				"user": {}
+			},
+			"creator": "avi@dataloop.ai",
+			"createdAt": "2022-02-22T09:15:29.859Z",
+			"updatedBy": "diwakar.negi@tcs.com",
+			"updatedAt": "2022-02-24T05:02:30.335Z",
+			"itemId": "61e06e0467146c2a1bfd3b9b",
+			"url": "https://gate.dataloop.ai/api/v1/annotations/6214a9b16937ef545ac34379",
+			"item": "https://gate.dataloop.ai/api/v1/items/61e06e0467146c2a1bfd3b9b",
+			"dataset": "https://gate.dataloop.ai/api/v1/datasets/61df2c877e42622a71758961",
+			"hash": "2ad6ddbdd7417f4c1d59e9c92009ba9b3156895e",
+			"source": "ui",
+			"coordinates": {
+				"position": {
+					"x": 4.884641577636687,
+					"y": 15.64622507020841,
+					"z": 2.001267891166021
+				},
+				"scale": {
+					"x": 10.238400276512098,
+					"y": 2.9345328657950877,
+					"z": 3.663413032061021
+				},
+				"rotation": {
+					"x": -0.0011210015104282719,
+					"y": -0.020688523182643895,
+					"z": 0.502097208734179
+				}
+			}
+		},
+		{
+			"id": "6214ac43ce3c034677a905cf",
+			"datasetId": "61df2c877e42622a71758961",
+			"type": "cube_3d",
+			"label": "Vehicle.Truck",
+			"attributes": [],
+			"metadata": {
+				"system": {
+					"status": null,
+					"startTime": 0,
+					"endTime": 200,
+					"frame": 0,
+					"endFrame": 200,
+					"snapshots_": [
+						{
+							"fixed": true,
+							"type": "ATTRIBUTE_CHANGE",
+							"frame": 1,
+							"objectVisible": true,
+							"data": {
+								"position": {
+									"x": 15.572470287435884,
+									"y": -5.941473910361973,
+									"z": 1.6202037602914226
+								},
+								"scale": {
+									"x": 6.655089452244463,
+									"y": 2.5005039574895568,
+									"z": 3.4622381302712448
+								},
+								"rotation": {
+									"x": 0,
+									"y": 0,
+									"z": 0.5365864467265322
+								}
+							},
+							"label": "Vehicle.Truck",
+							"attributes": [],
+							"namedAttributes": {}
+						},
+						{
+							"fixed": true,
+							"type": "ATTRIBUTE_CHANGE",
+							"frame": 2,
+							"objectVisible": true,
+							"data": {
+								"position": {
+									"x": 15.385999517773055,
+									"y": -5.6906936787702719,
+									"z": 1.5918700938848145
+								},
+								"scale": {
+									"x": 6.655089452244463,
+									"y": 2.5005039574895568,
+									"z": 3.4622381302712448
+								},
+								"rotation": {
+									"x": 0,
+									"y": 0,
+									"z": 0.5365864467265322
+								}
+							},
+							"label": "Vehicle",
+							"attributes": [],
+							"namedAttributes": {}
+						},
+						{
+							"fixed": true,
+							"type": "ATTRIBUTE_CHANGE",
+							"frame": 3,
+							"objectVisible": true,
+							"data": {
+								"position": {
+									"x": 15.23737024875551,
+									"y": -5.363519589993742,
+									"z": 1.5918700938848279
+								},
+								"scale": {
+									"x": 6.655089452244463,
+									"y": 2.5005039574895568,
+									"z": 3.4622381302712448
+								},
+								"rotation": {
+									"x": 0,
+									"y": 0,
+									"z": 0.5365864467265322
+								}
+							},
+							"label": "Vehicle",
+							"attributes": [],
+							"namedAttributes": {}
+						},
+						{
+							"fixed": false,
+							"type": "LINEAR",
+							"frame": 4,
+							"objectVisible": true,
+							"data": {
+								"position": {
+									"x": 15.039838191178669,
+									"y": -5.068428344619062,
+									"z": 1.567078203331601
+								},
+								"rotation": {
+									"x": 0,
+									"y": 0,
+									"z": 0.5365864467265322
+								},
+								"scale": {
+									"x": 6.655089452244463,
+									"y": 2.5005039574895568,
+									"z": 3.4622381302712448
+								}
+							},
+							"label": "Vehicle",
+							"attributes": [],
+							"namedAttributes": {}
+						},
+						{
+							"fixed": false,
+							"type": "LINEAR",
+							"frame": 5,
+							"objectVisible": true,
+							"data": {
+								"position": {
+									"x": 14.842306133601828,
+									"y": -4.773337099244381,
+									"z": 1.5422863127783746
+								},
+								"rotation": {
+									"x": 0,
+									"y": 0,
+									"z": 0.5365864467265322
+								},
+								"scale": {
+									"x": 6.655089452244463,
+									"y": 2.5005039574895568,
+									"z": 3.4622381302712448
+								}
+							},
+							"label": "Vehicle",
+							"attributes": [],
+							"namedAttributes": {}
+						},
+						{
+							"fixed": false,
+							"type": "LINEAR",
+							"frame": 6,
+							"objectVisible": true,
+							"data": {
+								"position": {
+									"x": 14.644774076024988,
+									"y": -4.478245853869701,
+									"z": 1.5174944222251479
+								},
+								"rotation": {
+									"x": 0,
+									"y": 0,
+									"z": 0.5365864467265322
+								},
+								"scale": {
+									"x": 6.655089452244463,
+									"y": 2.5005039574895568,
+									"z": 3.4622381302712448
+								}
+							},
+							"label": "Vehicle",
+							"attributes": [],
+							"namedAttributes": {}
+						},
+						{
+							"fixed": true,
+							"type": "ATTRIBUTE_CHANGE",
+							"frame": 7,
+							"objectVisible": true,
+							"data": {
+								"position": {
+									"x": 14.447242018448146,
+									"y": -4.1831546084950219,
+									"z": 1.4927025316719212
+								},
+								"scale": {
+									"x": 6.655089452244463,
+									"y": 2.5005039574895568,
+									"z": 3.4622381302712448
+								},
+								"rotation": {
+									"x": 0,
+									"y": 0,
+									"z": 0.5365864467265322
+								}
+							},
+							"label": "Vehicle",
+							"attributes": [],
+							"namedAttributes": {}
+						}
+					],
+					"parentId": null,
+					"clientId": "0f3223ec-7151-4a2a-b6fa-34dd0d0068af",
+					"automated": false,
+					"objectId": "11",
+					"isOpen": false,
+					"isOnlyLocal": false,
+					"frameNumberBased": true,
+					"attributes": {},
+					"clientParentId": null,
+					"system": false,
+					"description": null,
+					"itemLinks": [],
+					"openAnnotationVersion": "1.32.3-prod.8",
+					"recipeId": "61d6a9d1090fd05f635b17d0"
+				},
+				"user": {}
+			},
+			"creator": "shadi.m@dataloop.ai",
+			"createdAt": "2022-02-22T09:26:27.249Z",
+			"updatedBy": "diwakar.negi@tcs.com",
+			"updatedAt": "2022-02-24T10:20:30.689Z",
+			"itemId": "61e06e0467146c2a1bfd3b9b",
+			"url": "https://gate.dataloop.ai/api/v1/annotations/6214ac43ce3c034677a905cf",
+			"item": "https://gate.dataloop.ai/api/v1/items/61e06e0467146c2a1bfd3b9b",
+			"dataset": "https://gate.dataloop.ai/api/v1/datasets/61df2c877e42622a71758961",
+			"hash": "5125555194aec1aeb5eabde961293bc64fcf573d",
+			"source": "ui",
+			"coordinates": {
+				"position": {
+					"x": 15.346227015123086,
+					"y": -6.316849529959854,
+					"z": 1.846935294944025
+				},
+				"scale": {
+					"x": 6.655089452244463,
+					"y": 2.5005039574895568,
+					"z": 3.4622381302712448
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0.5365864467265322
+				}
+			}
+		},
+		{
+			"id": "6214b0297c70290453217514",
+			"datasetId": "61df2c877e42622a71758961",
+			"type": "cube_3d",
+			"label": "Vehicle",
+			"attributes": [],
+			"metadata": {
+				"system": {
+					"status": null,
+					"startTime": 0,
+					"endTime": 200,
+					"frame": 42,
+					"endFrame": 200,
+					"snapshots_": [],
+					"parentId": null,
+					"clientId": "bfc1a539-85d7-4556-85ae-27c1b5751867",
+					"automated": false,
+					"objectId": "15",
+					"isOpen": false,
+					"isOnlyLocal": false,
+					"frameNumberBased": true,
+					"attributes": {},
+					"clientParentId": null,
+					"system": false,
+					"description": null,
+					"itemLinks": [],
+					"openAnnotationVersion": "1.33.3-rc.17",
+					"recipeId": "61d6a9d1090fd05f635b17d0"
+				},
+				"user": {}
+			},
+			"creator": "shadi.m@dataloop.ai",
+			"createdAt": "2022-02-22T09:43:05.010Z",
+			"updatedBy": "shadi.m@dataloop.ai",
+			"updatedAt": "2022-02-22T09:43:05.010Z",
+			"itemId": "61e06e0467146c2a1bfd3b9b",
+			"url": "https://gate.dataloop.ai/api/v1/annotations/6214b0297c70290453217514",
+			"item": "https://gate.dataloop.ai/api/v1/items/61e06e0467146c2a1bfd3b9b",
+			"dataset": "https://gate.dataloop.ai/api/v1/datasets/61df2c877e42622a71758961",
+			"hash": "3a95ac31ec3044049dc61fbb58394be993d44282",
+			"source": "ui",
+			"coordinates": {
+				"position": {
+					"x": 5.2868909695239749,
+					"y": -23.373811817250745,
+					"z": 1.5
+				},
+				"scale": {
+					"x": 3,
+					"y": 3,
+					"z": 3
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				}
+			}
+		},
+		{
+			"id": "6214b0297c70294568217512",
+			"datasetId": "61df2c877e42622a71758961",
+			"type": "cube_3d",
+			"label": "Vehicle",
+			"attributes": [],
+			"metadata": {
+				"system": {
+					"status": null,
+					"startTime": 0,
+					"endTime": 200,
+					"frame": 35,
+					"endFrame": 200,
+					"snapshots_": [],
+					"parentId": null,
+					"clientId": "c2adf16c-9502-41dc-b951-8cd5b8a852fb",
+					"automated": false,
+					"objectId": "14",
+					"isOpen": false,
+					"isOnlyLocal": false,
+					"frameNumberBased": true,
+					"attributes": {},
+					"clientParentId": null,
+					"system": false,
+					"description": null,
+					"itemLinks": [],
+					"openAnnotationVersion": "1.33.3-rc.17",
+					"recipeId": "61d6a9d1090fd05f635b17d0"
+				},
+				"user": {}
+			},
+			"creator": "shadi.m@dataloop.ai",
+			"createdAt": "2022-02-22T09:43:05.008Z",
+			"updatedBy": "shadi.m@dataloop.ai",
+			"updatedAt": "2022-02-22T09:43:05.008Z",
+			"itemId": "61e06e0467146c2a1bfd3b9b",
+			"url": "https://gate.dataloop.ai/api/v1/annotations/6214b0297c70294568217512",
+			"item": "https://gate.dataloop.ai/api/v1/items/61e06e0467146c2a1bfd3b9b",
+			"dataset": "https://gate.dataloop.ai/api/v1/datasets/61df2c877e42622a71758961",
+			"hash": "44b2c83c21d8f0f4a9f83ae9740edc7a7d0a71e3",
+			"source": "ui",
+			"coordinates": {
+				"position": {
+					"x": -10.408582387420499,
+					"y": -7.685313781831405,
+					"z": 1.5
+				},
+				"scale": {
+					"x": 3,
+					"y": 2.999999999999999,
+					"z": 3
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				}
+			}
+		},
+		{
+			"id": "6214b0297c70293737217511",
+			"datasetId": "61df2c877e42622a71758961",
+			"type": "cube_3d",
+			"label": "Vehicle",
+			"attributes": [],
+			"metadata": {
+				"system": {
+					"status": null,
+					"startTime": 0,
+					"endTime": 200,
+					"frame": 14,
+					"endFrame": 200,
+					"snapshots_": [],
+					"parentId": null,
+					"clientId": "c0247ee0-07f2-4832-be53-c151e3a99ce5",
+					"automated": false,
+					"objectId": "12",
+					"isOpen": false,
+					"isOnlyLocal": false,
+					"frameNumberBased": true,
+					"attributes": {},
+					"clientParentId": null,
+					"system": false,
+					"description": null,
+					"itemLinks": [],
+					"openAnnotationVersion": "1.33.3-rc.17",
+					"recipeId": "61d6a9d1090fd05f635b17d0"
+				},
+				"user": {}
+			},
+			"creator": "shadi.m@dataloop.ai",
+			"createdAt": "2022-02-22T09:43:05.006Z",
+			"updatedBy": "shadi.m@dataloop.ai",
+			"updatedAt": "2022-02-22T09:43:05.006Z",
+			"itemId": "61e06e0467146c2a1bfd3b9b",
+			"url": "https://gate.dataloop.ai/api/v1/annotations/6214b0297c70293737217511",
+			"item": "https://gate.dataloop.ai/api/v1/items/61e06e0467146c2a1bfd3b9b",
+			"dataset": "https://gate.dataloop.ai/api/v1/datasets/61df2c877e42622a71758961",
+			"hash": "c89dd91467c4f0dd961ee1e4ff45de5bc4569823",
+			"source": "ui",
+			"coordinates": {
+				"position": {
+					"x": 14.121918924887613,
+					"y": -10.430629475735369,
+					"z": 1.5
+				},
+				"scale": {
+					"x": 3,
+					"y": 3,
+					"z": 3
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				}
+			}
+		},
+		{
+			"id": "6214b0297c70291e59217513",
+			"datasetId": "61df2c877e42622a71758961",
+			"type": "cube_3d",
+			"label": "Vehicle",
+			"attributes": [],
+			"metadata": {
+				"system": {
+					"status": null,
+					"startTime": 0,
+					"endTime": 200,
+					"frame": 28,
+					"endFrame": 200,
+					"snapshots_": [],
+					"parentId": null,
+					"clientId": "85d11fa4-25a0-4bf9-a510-445a3752ee4c",
+					"automated": false,
+					"objectId": "13",
+					"isOpen": false,
+					"isOnlyLocal": false,
+					"frameNumberBased": true,
+					"attributes": {},
+					"clientParentId": null,
+					"system": false,
+					"description": null,
+					"itemLinks": [],
+					"openAnnotationVersion": "1.33.3-rc.17",
+					"recipeId": "61d6a9d1090fd05f635b17d0"
+				},
+				"user": {}
+			},
+			"creator": "shadi.m@dataloop.ai",
+			"createdAt": "2022-02-22T09:43:05.009Z",
+			"updatedBy": "shadi.m@dataloop.ai",
+			"updatedAt": "2022-02-22T09:43:05.009Z",
+			"itemId": "61e06e0467146c2a1bfd3b9b",
+			"url": "https://gate.dataloop.ai/api/v1/annotations/6214b0297c70291e59217513",
+			"item": "https://gate.dataloop.ai/api/v1/items/61e06e0467146c2a1bfd3b9b",
+			"dataset": "https://gate.dataloop.ai/api/v1/datasets/61df2c877e42622a71758961",
+			"hash": "5ed6fb71166964e515db85daf073ab114f7f908c",
+			"source": "ui",
+			"coordinates": {
+				"position": {
+					"x": 0.9298611208904511,
+					"y": -2.5096205297062039,
+					"z": 1.2051065242848865
+				},
+				"scale": {
+					"x": 3,
+					"y": 3.0000000000000006,
+					"z": 2.410213048569773
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				}
+			}
+		},
+		{
+			"id": "6214b79a55370d774b457875",
+			"datasetId": "61df2c877e42622a71758961",
+			"type": "cube_3d",
+			"label": "Truck",
+			"attributes": [],
+			"metadata": {
+				"system": {
+					"status": null,
+					"startTime": 0,
+					"endTime": 200,
+					"frame": 15,
+					"endFrame": 200,
+					"snapshots_": [],
+					"parentId": null,
+					"clientId": "f2980493-a43d-4a7d-bf65-2fa84aa12bc6",
+					"automated": false,
+					"objectId": "42",
+					"isOpen": false,
+					"isOnlyLocal": false,
+					"frameNumberBased": true,
+					"attributes": {},
+					"clientParentId": null,
+					"system": false,
+					"description": null,
+					"itemLinks": [],
+					"openAnnotationVersion": "1.32.3-prod.8",
+					"recipeId": "61d6a9d1090fd05f635b17d0"
+				},
+				"user": {}
+			},
+			"creator": "chaudhary.swati@tcs.com",
+			"createdAt": "2022-02-22T10:14:50.612Z",
+			"updatedBy": "chaudhary.swati@tcs.com",
+			"updatedAt": "2022-02-22T10:14:50.612Z",
+			"itemId": "61e06e0467146c2a1bfd3b9b",
+			"url": "https://gate.dataloop.ai/api/v1/annotations/6214b79a55370d774b457875",
+			"item": "https://gate.dataloop.ai/api/v1/items/61e06e0467146c2a1bfd3b9b",
+			"dataset": "https://gate.dataloop.ai/api/v1/datasets/61df2c877e42622a71758961",
+			"hash": "d12d9e7ad3ac97a82bc8dc022971ca99ff3514bc",
+			"source": "ui",
+			"coordinates": {
+				"position": {
+					"x": 17.8648136206932,
+					"y": -16.510939416213274,
+					"z": 1.5
+				},
+				"scale": {
+					"x": 2.568034557235421,
+					"y": 2.568034557235421,
+					"z": 2.568034557235421
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				}
+			}
+		},
+		{
+			"id": "62171167469a30cc3178d4e7",
+			"datasetId": "61df2c877e42622a71758961",
+			"type": "cube_3d",
+			"label": "Vehicle.Truck",
+			"attributes": [],
+			"metadata": {
+				"system": {
+					"status": null,
+					"startTime": 0,
+					"endTime": 200,
+					"frame": 0,
+					"endFrame": 200,
+					"snapshots_": [],
+					"parentId": null,
+					"clientId": "7533e617-8198-4eb4-9726-ffff20ac6cc3",
+					"automated": false,
+					"objectId": "48",
+					"isOpen": false,
+					"isOnlyLocal": false,
+					"frameNumberBased": true,
+					"attributes": {},
+					"clientParentId": null,
+					"system": false,
+					"description": null,
+					"itemLinks": [],
+					"openAnnotationVersion": "1.32.3-prod.8",
+					"recipeId": "61d6a9d1090fd05f635b17d0"
+				},
+				"user": {}
+			},
+			"creator": "diwakar.negi@tcs.com",
+			"createdAt": "2022-02-24T05:02:31.379Z",
+			"updatedBy": "diwakar.negi@tcs.com",
+			"updatedAt": "2022-02-24T05:02:31.379Z",
+			"itemId": "61e06e0467146c2a1bfd3b9b",
+			"url": "https://gate.dataloop.ai/api/v1/annotations/62171167469a30cc3178d4e7",
+			"item": "https://gate.dataloop.ai/api/v1/items/61e06e0467146c2a1bfd3b9b",
+			"dataset": "https://gate.dataloop.ai/api/v1/datasets/61df2c877e42622a71758961",
+			"hash": "68d72de7027077a06305ddb729af88fae1424d78",
+			"source": "ui",
+			"coordinates": {
+				"position": {
+					"x": 18.340968991772127,
+					"y": -12.691805652530173,
+					"z": 1.0221336701603559
+				},
+				"scale": {
+					"x": 5.788615384067258,
+					"y": 2.859611231101512,
+					"z": 1.9038785714225218
+				},
+				"rotation": {
+					"x": -0.02030428475201591,
+					"y": -0.05283492633715484,
+					"z": 0.5720337856296349
+				}
+			}
+		},
+		{
+			"id": "62171167469a3006a278d4e8",
+			"datasetId": "61df2c877e42622a71758961",
+			"type": "cube_3d",
+			"label": "Vehicle.Truck",
+			"attributes": [],
+			"metadata": {
+				"system": {
+					"status": null,
+					"startTime": 0,
+					"endTime": 200,
+					"frame": 0,
+					"endFrame": 200,
+					"snapshots_": [],
+					"parentId": null,
+					"clientId": "53e3ba5e-50c1-45ed-84dc-bce715b8e552",
+					"automated": false,
+					"objectId": "51",
+					"isOpen": false,
+					"isOnlyLocal": false,
+					"frameNumberBased": true,
+					"attributes": {},
+					"clientParentId": null,
+					"system": false,
+					"description": null,
+					"itemLinks": [],
+					"openAnnotationVersion": "1.32.3-prod.8",
+					"recipeId": "61d6a9d1090fd05f635b17d0"
+				},
+				"user": {}
+			},
+			"creator": "diwakar.negi@tcs.com",
+			"createdAt": "2022-02-24T05:02:31.380Z",
+			"updatedBy": "diwakar.negi@tcs.com",
+			"updatedAt": "2022-02-24T05:02:31.380Z",
+			"itemId": "61e06e0467146c2a1bfd3b9b",
+			"url": "https://gate.dataloop.ai/api/v1/annotations/62171167469a3006a278d4e8",
+			"item": "https://gate.dataloop.ai/api/v1/items/61e06e0467146c2a1bfd3b9b",
+			"dataset": "https://gate.dataloop.ai/api/v1/datasets/61df2c877e42622a71758961",
+			"hash": "8b0f1ee5fdb7ac3928aade9577d5a9cfe415b2c0",
+			"source": "ui",
+			"coordinates": {
+				"position": {
+					"x": 10.594670274901615,
+					"y": 3.2082614658239856,
+					"z": 1.0196619331340565
+				},
+				"scale": {
+					"x": 6.963646281591697,
+					"y": 2.8582995951417,
+					"z": 1.8976234614098702
+				},
+				"rotation": {
+					"x": 0.04733458316282626,
+					"y": -0.050105991758998939,
+					"z": 0.5483631859362108
+				}
+			}
+		},
+		{
+			"id": "62171167469a3018cc78d4e9",
+			"datasetId": "61df2c877e42622a71758961",
+			"type": "cube_3d",
+			"label": "Vehicle.Truck",
+			"attributes": [],
+			"metadata": {
+				"system": {
+					"status": null,
+					"startTime": 0,
+					"endTime": 200,
+					"frame": 0,
+					"endFrame": 200,
+					"snapshots_": [],
+					"parentId": null,
+					"clientId": "c3f04d7f-2eba-4b09-a94c-5f3baa2d71ef",
+					"automated": false,
+					"objectId": "49",
+					"isOpen": false,
+					"isOnlyLocal": false,
+					"frameNumberBased": true,
+					"attributes": {},
+					"clientParentId": null,
+					"system": false,
+					"description": null,
+					"itemLinks": [],
+					"openAnnotationVersion": "1.32.3-prod.8",
+					"recipeId": "61d6a9d1090fd05f635b17d0",
+					"plottingParams": {},
+					"issueTaskId": {},
+					"issueAssignmentId": {}
+				},
+				"user": {}
+			},
+			"creator": "diwakar.negi@tcs.com",
+			"createdAt": "2022-02-24T05:02:31.384Z",
+			"updatedBy": "diwakar.negi@tcs.com",
+			"updatedAt": "2022-02-24T05:02:31.384Z",
+			"itemId": "61e06e0467146c2a1bfd3b9b",
+			"url": "https://gate.dataloop.ai/api/v1/annotations/62171167469a3018cc78d4e9",
+			"item": "https://gate.dataloop.ai/api/v1/items/61e06e0467146c2a1bfd3b9b",
+			"dataset": "https://gate.dataloop.ai/api/v1/datasets/61df2c877e42622a71758961",
+			"hash": "11518e198cacab522589a2a3d48e7039dc0947fe",
+			"source": "ui",
+			"coordinates": {
+				"position": {
+					"x": 16.517663474418389,
+					"y": -9.381066686808849,
+					"z": 1.0221336701603417
+				},
+				"scale": {
+					"x": 5.788615384067258,
+					"y": 2.859611231101512,
+					"z": 1.9038785714225218
+				},
+				"rotation": {
+					"x": -0.02030428475201591,
+					"y": -0.052834926337154839,
+					"z": 0.572033785629635
+				}
+			}
+		},
+		{
+			"id": "62171167469a3018dd78d4ea",
+			"datasetId": "61df2c877e42622a71758961",
+			"type": "cube_3d",
+			"label": "Vehicle.Truck",
+			"attributes": [],
+			"metadata": {
+				"system": {
+					"status": null,
+					"startTime": 0,
+					"endTime": 200,
+					"frame": 0,
+					"endFrame": 200,
+					"snapshots_": [],
+					"parentId": null,
+					"clientId": "a9b4d9bc-008c-409f-88f1-9e642dc6482d",
+					"automated": false,
+					"objectId": "50",
+					"isOpen": false,
+					"isOnlyLocal": false,
+					"frameNumberBased": true,
+					"attributes": {},
+					"clientParentId": null,
+					"system": false,
+					"description": null,
+					"itemLinks": [],
+					"openAnnotationVersion": "1.32.3-prod.8",
+					"recipeId": "61d6a9d1090fd05f635b17d0"
+				},
+				"user": {}
+			},
+			"creator": "diwakar.negi@tcs.com",
+			"createdAt": "2022-02-24T05:02:31.383Z",
+			"updatedBy": "diwakar.negi@tcs.com",
+			"updatedAt": "2022-02-24T05:02:31.383Z",
+			"itemId": "61e06e0467146c2a1bfd3b9b",
+			"url": "https://gate.dataloop.ai/api/v1/annotations/62171167469a3018dd78d4ea",
+			"item": "https://gate.dataloop.ai/api/v1/items/61e06e0467146c2a1bfd3b9b",
+			"dataset": "https://gate.dataloop.ai/api/v1/datasets/61df2c877e42622a71758961",
+			"hash": "1b6016889d19916e53ff874e94be00908200efe7",
+			"source": "ui",
+			"coordinates": {
+				"position": {
+					"x": 13.46267547110048,
+					"y": -3.2899641648658495,
+					"z": 1.0251727293140239
+				},
+				"scale": {
+					"x": 5.838910314693255,
+					"y": 2.9257759784075567,
+					"z": 1.9761214370356193
+				},
+				"rotation": {
+					"x": 0.04061732910983462,
+					"y": -0.043433303964681379,
+					"z": 0.5335616619625909
+				}
+			}
+		},
+		{
+			"id": "62171167469a30874878d4e6",
+			"datasetId": "61df2c877e42622a71758961",
+			"type": "cube_3d",
+			"label": "Vehicle.Truck",
+			"attributes": [],
+			"metadata": {
+				"system": {
+					"status": null,
+					"startTime": 0,
+					"endTime": 200,
+					"frame": 0,
+					"endFrame": 200,
+					"snapshots_": [],
+					"parentId": null,
+					"clientId": "42adf032-b03e-4cdf-bec0-eebc064131a7",
+					"automated": false,
+					"objectId": "43",
+					"isOpen": false,
+					"isOnlyLocal": false,
+					"frameNumberBased": true,
+					"attributes": {},
+					"clientParentId": null,
+					"system": false,
+					"description": null,
+					"itemLinks": [],
+					"openAnnotationVersion": "1.32.3-prod.8",
+					"recipeId": "61d6a9d1090fd05f635b17d0"
+				},
+				"user": {}
+			},
+			"creator": "diwakar.negi@tcs.com",
+			"createdAt": "2022-02-24T05:02:31.381Z",
+			"updatedBy": "diwakar.negi@tcs.com",
+			"updatedAt": "2022-02-24T09:50:01.973Z",
+			"itemId": "61e06e0467146c2a1bfd3b9b",
+			"url": "https://gate.dataloop.ai/api/v1/annotations/62171167469a30874878d4e6",
+			"item": "https://gate.dataloop.ai/api/v1/items/61e06e0467146c2a1bfd3b9b",
+			"dataset": "https://gate.dataloop.ai/api/v1/datasets/61df2c877e42622a71758961",
+			"hash": "255e431b90fcc2dc72ffe3b7a2a997a918e7eb44",
+			"source": "ui",
+			"coordinates": {
+				"position": {
+					"x": 19.737205067346328,
+					"y": -18.908018825380617,
+					"z": 1.00427287159218
+				},
+				"scale": {
+					"x": 3.9439875268491315,
+					"y": 2.4097518953963568,
+					"z": 1.941069359918354
+				},
+				"rotation": {
+					"x": 0.00701377849065262,
+					"y": -0.061735734707014548,
+					"z": 0.5763734605230648
+				}
+			}
+		},
+		{
+			"id": "62171167469a302b5778d4ee",
+			"datasetId": "61df2c877e42622a71758961",
+			"type": "cube_3d",
+			"label": "Vehicle.Truck",
+			"attributes": [],
+			"metadata": {
+				"system": {
+					"status": null,
+					"startTime": 0,
+					"endTime": 200,
+					"frame": 0,
+					"endFrame": 200,
+					"snapshots_": [],
+					"parentId": null,
+					"clientId": "e62acbe4-cb3a-4d6b-8939-42111158eea6",
+					"automated": false,
+					"objectId": "54",
+					"isOpen": false,
+					"isOnlyLocal": false,
+					"frameNumberBased": true,
+					"attributes": {},
+					"clientParentId": null,
+					"system": false,
+					"description": null,
+					"itemLinks": [],
+					"openAnnotationVersion": "1.32.3-prod.8",
+					"recipeId": "61d6a9d1090fd05f635b17d0",
+					"plottingParams": {},
+					"issueTaskId": {},
+					"issueAssignmentId": {}
+				},
+				"user": {}
+			},
+			"creator": "diwakar.negi@tcs.com",
+			"createdAt": "2022-02-24T05:02:31.387Z",
+			"updatedBy": "diwakar.negi@tcs.com",
+			"updatedAt": "2022-02-24T09:50:02.324Z",
+			"itemId": "61e06e0467146c2a1bfd3b9b",
+			"url": "https://gate.dataloop.ai/api/v1/annotations/62171167469a302b5778d4ee",
+			"item": "https://gate.dataloop.ai/api/v1/items/61e06e0467146c2a1bfd3b9b",
+			"dataset": "https://gate.dataloop.ai/api/v1/datasets/61df2c877e42622a71758961",
+			"hash": "add027520aea20e0b0a960b0797909cba385dfdf",
+			"source": "ui",
+			"coordinates": {
+				"position": {
+					"x": -0.6284858927446455,
+					"y": 20.929947855419799,
+					"z": 1.02618758199025
+				},
+				"scale": {
+					"x": 5.699598000850753,
+					"y": 2.7805350768447365,
+					"z": 1.9511605890816648
+				},
+				"rotation": {
+					"x": 0.013081119041909945,
+					"y": -0.08288606903212778,
+					"z": 0.52879302513697
+				}
+			}
+		},
+		{
+			"id": "62171167469a30a1b478d4ed",
+			"datasetId": "61df2c877e42622a71758961",
+			"type": "cube_3d",
+			"label": "Vehicle.Truck",
+			"attributes": [],
+			"metadata": {
+				"system": {
+					"status": null,
+					"startTime": 0,
+					"endTime": 200,
+					"frame": 0,
+					"endFrame": 200,
+					"snapshots_": [
+						{
+							"fixed": true,
+							"type": "ATTRIBUTE_CHANGE",
+							"frame": 65,
+							"objectVisible": true,
+							"data": {
+								"position": {
+									"x": 27.81413319535165,
+									"y": -44.379685463049799,
+									"z": 0.4418268323278882
+								},
+								"scale": {
+									"x": 4.085425021965482,
+									"y": 13.662544409622722,
+									"z": 3.1869795976700687
+								},
+								"rotation": {
+									"x": -0.04612309696644928,
+									"y": -0.0015806754227230117,
+									"z": 0.32514911726067766
+								}
+							},
+							"label": "Vehicle.Truck",
+							"attributes": [],
+							"namedAttributes": {}
+						}
+					],
+					"parentId": null,
+					"clientId": "3142d8d5-e73e-4473-9faa-e729eb307c49",
+					"automated": false,
+					"objectId": "56",
+					"isOpen": false,
+					"isOnlyLocal": false,
+					"frameNumberBased": true,
+					"attributes": {},
+					"clientParentId": null,
+					"system": false,
+					"description": null,
+					"itemLinks": [],
+					"openAnnotationVersion": "1.32.3-prod.8",
+					"recipeId": "61d6a9d1090fd05f635b17d0"
+				},
+				"user": {}
+			},
+			"creator": "diwakar.negi@tcs.com",
+			"createdAt": "2022-02-24T05:02:31.386Z",
+			"updatedBy": "diwakar.negi@tcs.com",
+			"updatedAt": "2022-02-24T07:35:38.818Z",
+			"itemId": "61e06e0467146c2a1bfd3b9b",
+			"url": "https://gate.dataloop.ai/api/v1/annotations/62171167469a30a1b478d4ed",
+			"item": "https://gate.dataloop.ai/api/v1/items/61e06e0467146c2a1bfd3b9b",
+			"dataset": "https://gate.dataloop.ai/api/v1/datasets/61df2c877e42622a71758961",
+			"hash": "626e4d59294c75839cd9c0778b15e46ad8eefd44",
+			"source": "ui",
+			"coordinates": {
+				"position": {
+					"x": 27.81413319535165,
+					"y": -44.379685463049799,
+					"z": 0.4418268323278882
+				},
+				"scale": {
+					"x": 4.085425021965482,
+					"y": 13.662544409622722,
+					"z": 3.1869795976700687
+				},
+				"rotation": {
+					"x": -0.04612309696644928,
+					"y": -0.0015806754227230117,
+					"z": 0.32514911726067766
+				}
+			}
+		},
+		{
+			"id": "62171167469a3077e378d4ec",
+			"datasetId": "61df2c877e42622a71758961",
+			"type": "cube_3d",
+			"label": "Vehicle.Truck",
+			"attributes": [],
+			"metadata": {
+				"system": {
+					"status": null,
+					"startTime": 0,
+					"endTime": 200,
+					"frame": 0,
+					"endFrame": 200,
+					"snapshots_": [],
+					"parentId": null,
+					"clientId": "a78a48ce-274b-45cb-8c16-63de02df4de9",
+					"automated": false,
+					"objectId": "53",
+					"isOpen": false,
+					"isOnlyLocal": false,
+					"frameNumberBased": true,
+					"attributes": {},
+					"clientParentId": null,
+					"system": false,
+					"description": null,
+					"itemLinks": [],
+					"openAnnotationVersion": "1.32.3-prod.8",
+					"recipeId": "61d6a9d1090fd05f635b17d0"
+				},
+				"user": {}
+			},
+			"creator": "diwakar.negi@tcs.com",
+			"createdAt": "2022-02-24T05:02:31.386Z",
+			"updatedBy": "diwakar.negi@tcs.com",
+			"updatedAt": "2022-02-24T05:02:31.386Z",
+			"itemId": "61e06e0467146c2a1bfd3b9b",
+			"url": "https://gate.dataloop.ai/api/v1/annotations/62171167469a3077e378d4ec",
+			"item": "https://gate.dataloop.ai/api/v1/items/61e06e0467146c2a1bfd3b9b",
+			"dataset": "https://gate.dataloop.ai/api/v1/datasets/61df2c877e42622a71758961",
+			"hash": "4df5bf9b147aee66b72fc625c008f1f83920cb11",
+			"source": "ui",
+			"coordinates": {
+				"position": {
+					"x": 1.0856980645973214,
+					"y": 17.4129152532871,
+					"z": 1.0261875819902536
+				},
+				"scale": {
+					"x": 5.699598000850753,
+					"y": 2.7805350768447365,
+					"z": 1.9511605890816648
+				},
+				"rotation": {
+					"x": 0.013081119041909949,
+					"y": -0.08288606903212773,
+					"z": 0.52879302513697
+				}
+			}
+		},
+		{
+			"id": "62171167469a301d4d78d4eb",
+			"datasetId": "61df2c877e42622a71758961",
+			"type": "cube_3d",
+			"label": "Vehicle.Truck",
+			"attributes": [],
+			"metadata": {
+				"system": {
+					"status": null,
+					"startTime": 0,
+					"endTime": 200,
+					"frame": 0,
+					"endFrame": 200,
+					"snapshots_": [],
+					"parentId": null,
+					"clientId": "7c911852-0c0b-4f5e-9316-4b5af31e27a9",
+					"automated": false,
+					"objectId": "52",
+					"isOpen": false,
+					"isOnlyLocal": false,
+					"frameNumberBased": true,
+					"attributes": {},
+					"clientParentId": null,
+					"system": false,
+					"description": null,
+					"itemLinks": [],
+					"openAnnotationVersion": "1.32.3-prod.8",
+					"recipeId": "61d6a9d1090fd05f635b17d0"
+				},
+				"user": {}
+			},
+			"creator": "diwakar.negi@tcs.com",
+			"createdAt": "2022-02-24T05:02:31.385Z",
+			"updatedBy": "diwakar.negi@tcs.com",
+			"updatedAt": "2022-02-24T05:02:31.385Z",
+			"itemId": "61e06e0467146c2a1bfd3b9b",
+			"url": "https://gate.dataloop.ai/api/v1/annotations/62171167469a301d4d78d4eb",
+			"item": "https://gate.dataloop.ai/api/v1/items/61e06e0467146c2a1bfd3b9b",
+			"dataset": "https://gate.dataloop.ai/api/v1/datasets/61df2c877e42622a71758961",
+			"hash": "d8680ed21173e4f1905253f1f84fe658e0afad1f",
+			"source": "ui",
+			"coordinates": {
+				"position": {
+					"x": 4.520164074729076,
+					"y": 11.536303660577959,
+					"z": 1.0240287424736093
+				},
+				"scale": {
+					"x": 5.163645848545766,
+					"y": 2.8920377867746289,
+					"z": 1.940095271721684
+				},
+				"rotation": {
+					"x": -0.018328289604519104,
+					"y": -0.032348618767026948,
+					"z": 0.4954333913576207
+				}
+			}
+		},
+		{
+			"id": "62171a56d6465f0c542b4799",
+			"datasetId": "61df2c877e42622a71758961",
+			"type": "cube_3d",
+			"label": "Vehicle.Bus",
+			"attributes": [],
+			"metadata": {
+				"system": {
+					"status": null,
+					"startTime": 0,
+					"endTime": 200,
+					"frame": 0,
+					"endFrame": 200,
+					"snapshots_": [],
+					"parentId": null,
+					"clientId": "7aa20d33-319f-4dc7-b9ef-f14a3176547d",
+					"automated": false,
+					"objectId": "60",
+					"isOpen": false,
+					"isOnlyLocal": false,
+					"frameNumberBased": true,
+					"attributes": {},
+					"clientParentId": null,
+					"system": false,
+					"description": null,
+					"itemLinks": [],
+					"openAnnotationVersion": "1.32.3-prod.8",
+					"recipeId": "61d6a9d1090fd05f635b17d0"
+				},
+				"user": {}
+			},
+			"creator": "diwakar.negi@tcs.com",
+			"createdAt": "2022-02-24T05:40:38.451Z",
+			"updatedBy": "diwakar.negi@tcs.com",
+			"updatedAt": "2022-02-24T05:40:38.451Z",
+			"itemId": "61e06e0467146c2a1bfd3b9b",
+			"url": "https://gate.dataloop.ai/api/v1/annotations/62171a56d6465f0c542b4799",
+			"item": "https://gate.dataloop.ai/api/v1/items/61e06e0467146c2a1bfd3b9b",
+			"dataset": "https://gate.dataloop.ai/api/v1/datasets/61df2c877e42622a71758961",
+			"hash": "f6a67071c61f3d31323a208f57541407695f0629",
+			"source": "ui",
+			"coordinates": {
+				"position": {
+					"x": -27.82191618803221,
+					"y": 49.74000286462662,
+					"z": 1.5000000000000569
+				},
+				"scale": {
+					"x": 2.9244060475161977,
+					"y": 13.95409089407302,
+					"z": 2.9244060475161977
+				},
+				"rotation": {
+					"x": -0.021346764371368917,
+					"y": -0.029897148517687295,
+					"z": 0.4629268309537004
+				}
+			}
+		},
+		{
+			"id": "62171a56d6465f85b32b479a",
+			"datasetId": "61df2c877e42622a71758961",
+			"type": "cube_3d",
+			"label": "Bollard",
+			"attributes": [],
+			"metadata": {
+				"system": {
+					"status": null,
+					"startTime": 0,
+					"endTime": 200,
+					"frame": 0,
+					"endFrame": 200,
+					"snapshots_": [
+						{
+							"fixed": true,
+							"type": "ATTRIBUTE_CHANGE",
+							"frame": 1,
+							"objectVisible": true,
+							"data": {
+								"position": {
+									"x": -7.112892182497341,
+									"y": -10.823507586225843,
+									"z": 0.9212135810019665
+								},
+								"scale": {
+									"x": 0.2791235207918802,
+									"y": 0.27712561232847846,
+									"z": 1.4576205003070473
+								},
+								"rotation": {
+									"x": 0,
+									"y": 0,
+									"z": 0
+								}
+							},
+							"label": "Bollard",
+							"attributes": [],
+							"namedAttributes": {}
+						}
+					],
+					"parentId": null,
+					"clientId": "654b0444-cd3e-465f-9322-5a2a54369478",
+					"automated": false,
+					"objectId": "61",
+					"isOpen": false,
+					"isOnlyLocal": false,
+					"frameNumberBased": true,
+					"attributes": {},
+					"clientParentId": null,
+					"system": false,
+					"description": null,
+					"itemLinks": [],
+					"openAnnotationVersion": "1.32.3-prod.8",
+					"recipeId": "61d6a9d1090fd05f635b17d0"
+				},
+				"user": {}
+			},
+			"creator": "diwakar.negi@tcs.com",
+			"createdAt": "2022-02-24T05:40:38.453Z",
+			"updatedBy": "diwakar.negi@tcs.com",
+			"updatedAt": "2022-02-24T10:20:30.683Z",
+			"itemId": "61e06e0467146c2a1bfd3b9b",
+			"url": "https://gate.dataloop.ai/api/v1/annotations/62171a56d6465f85b32b479a",
+			"item": "https://gate.dataloop.ai/api/v1/items/61e06e0467146c2a1bfd3b9b",
+			"dataset": "https://gate.dataloop.ai/api/v1/datasets/61df2c877e42622a71758961",
+			"hash": "0ade884ff1f9d83a233078c6d71e2dff5ecbef80",
+			"source": "ui",
+			"coordinates": {
+				"position": {
+					"x": -7.016244038151323,
+					"y": -11.040965912091647,
+					"z": 0.9212039161875305
+				},
+				"scale": {
+					"x": 0.2791235207918802,
+					"y": 0.27712561232847846,
+					"z": 1.4576205003070473
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				}
+			}
+		},
+		{
+			"id": "62171a56d6465f4da52b479b",
+			"datasetId": "61df2c877e42622a71758961",
+			"type": "cube_3d",
+			"label": "Bollard",
+			"attributes": [],
+			"metadata": {
+				"system": {
+					"status": null,
+					"startTime": 0,
+					"endTime": 200,
+					"frame": 0,
+					"endFrame": 200,
+					"snapshots_": [
+						{
+							"fixed": true,
+							"type": "ATTRIBUTE_CHANGE",
+							"frame": 1,
+							"objectVisible": true,
+							"data": {
+								"position": {
+									"x": -7.944725916174299,
+									"y": -9.385735321591314,
+									"z": 0.9212220378816036
+								},
+								"scale": {
+									"x": 0.2791235207918802,
+									"y": 0.27712561232847846,
+									"z": 1.4576205003070473
+								},
+								"rotation": {
+									"x": 0,
+									"y": 0,
+									"z": 0
+								}
+							},
+							"label": "Bollard",
+							"attributes": [],
+							"namedAttributes": {}
+						}
+					],
+					"parentId": null,
+					"clientId": "90c4e8fb-b883-4d26-b36a-4ec2e84450a7",
+					"automated": false,
+					"objectId": "62",
+					"isOpen": false,
+					"isOnlyLocal": false,
+					"frameNumberBased": true,
+					"attributes": {},
+					"clientParentId": null,
+					"system": false,
+					"description": null,
+					"itemLinks": [],
+					"openAnnotationVersion": "1.32.3-prod.8",
+					"recipeId": "61d6a9d1090fd05f635b17d0",
+					"plottingParams": {},
+					"issueTaskId": {},
+					"issueAssignmentId": {}
+				},
+				"user": {}
+			},
+			"creator": "diwakar.negi@tcs.com",
+			"createdAt": "2022-02-24T05:40:38.455Z",
+			"updatedBy": "diwakar.negi@tcs.com",
+			"updatedAt": "2022-02-24T10:20:31.098Z",
+			"itemId": "61e06e0467146c2a1bfd3b9b",
+			"url": "https://gate.dataloop.ai/api/v1/annotations/62171a56d6465f4da52b479b",
+			"item": "https://gate.dataloop.ai/api/v1/items/61e06e0467146c2a1bfd3b9b",
+			"dataset": "https://gate.dataloop.ai/api/v1/datasets/61df2c877e42622a71758961",
+			"hash": "bc79299b9dbd28f6a502bf78220114c08989c0ff",
+			"source": "ui",
+			"coordinates": {
+				"position": {
+					"x": -7.76350897541438,
+					"y": -9.651520169368146,
+					"z": 0.9212039161875287
+				},
+				"scale": {
+					"x": 0.2791235207918802,
+					"y": 0.27712561232847846,
+					"z": 1.4576205003070473
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				}
+			}
+		},
+		{
+			"id": "62171a56d6465f51cc2b4797",
+			"datasetId": "61df2c877e42622a71758961",
+			"type": "cube_3d",
+			"label": "Vehicle.Truck",
+			"attributes": [],
+			"metadata": {
+				"system": {
+					"status": null,
+					"startTime": 0,
+					"endTime": 200,
+					"frame": 0,
+					"endFrame": 200,
+					"snapshots_": [],
+					"parentId": null,
+					"clientId": "e2838aa5-c3b1-40df-84f3-87b6f5fdb197",
+					"automated": false,
+					"objectId": "58",
+					"isOpen": false,
+					"isOnlyLocal": false,
+					"frameNumberBased": true,
+					"attributes": {},
+					"clientParentId": null,
+					"system": false,
+					"description": null,
+					"itemLinks": [],
+					"openAnnotationVersion": "1.32.3-prod.8",
+					"recipeId": "61d6a9d1090fd05f635b17d0"
+				},
+				"user": {}
+			},
+			"creator": "diwakar.negi@tcs.com",
+			"createdAt": "2022-02-24T05:40:38.452Z",
+			"updatedBy": "diwakar.negi@tcs.com",
+			"updatedAt": "2022-02-24T10:39:46.494Z",
+			"itemId": "61e06e0467146c2a1bfd3b9b",
+			"url": "https://gate.dataloop.ai/api/v1/annotations/62171a56d6465f51cc2b4797",
+			"item": "https://gate.dataloop.ai/api/v1/items/61e06e0467146c2a1bfd3b9b",
+			"dataset": "https://gate.dataloop.ai/api/v1/datasets/61df2c877e42622a71758961",
+			"hash": "cb5694be246bac07451984ce31fb005d48d6f83a",
+			"source": "ui",
+			"coordinates": {
+				"position": {
+					"x": 14.355395528159845,
+					"y": -40.5807794616138,
+					"z": 1.062953369634806
+				},
+				"scale": {
+					"x": 3.2026507500579006,
+					"y": 11.989415090761718,
+					"z": 2.031489206822112
+				},
+				"rotation": {
+					"x": -0.033222414336176907,
+					"y": -0.021516604195430775,
+					"z": 0.47207596670079057
+				}
+			}
+		},
+		{
+			"id": "62171a56d6465f681c2b4798",
+			"datasetId": "61df2c877e42622a71758961",
+			"type": "cube_3d",
+			"label": "Vehicle.Truck",
+			"attributes": [],
+			"metadata": {
+				"system": {
+					"status": null,
+					"startTime": 0,
+					"endTime": 200,
+					"frame": 0,
+					"endFrame": 200,
+					"snapshots_": [],
+					"parentId": null,
+					"clientId": "dccf42a0-54fb-42eb-bb24-74e2e6820c00",
+					"automated": false,
+					"objectId": "57",
+					"isOpen": false,
+					"isOnlyLocal": false,
+					"frameNumberBased": true,
+					"attributes": {},
+					"clientParentId": null,
+					"system": false,
+					"description": null,
+					"itemLinks": [],
+					"openAnnotationVersion": "1.32.3-prod.8",
+					"recipeId": "61d6a9d1090fd05f635b17d0"
+				},
+				"user": {}
+			},
+			"creator": "diwakar.negi@tcs.com",
+			"createdAt": "2022-02-24T05:40:38.454Z",
+			"updatedBy": "diwakar.negi@tcs.com",
+			"updatedAt": "2022-02-24T09:50:02.689Z",
+			"itemId": "61e06e0467146c2a1bfd3b9b",
+			"url": "https://gate.dataloop.ai/api/v1/annotations/62171a56d6465f681c2b4798",
+			"item": "https://gate.dataloop.ai/api/v1/items/61e06e0467146c2a1bfd3b9b",
+			"dataset": "https://gate.dataloop.ai/api/v1/datasets/61df2c877e42622a71758961",
+			"hash": "631284d5ee6c4589ffe499aa4621073b01c02ddd",
+			"source": "ui",
+			"coordinates": {
+				"position": {
+					"x": 5.418198229528863,
+					"y": -25.695253695330455,
+					"z": 1.4662618083670787
+				},
+				"scale": {
+					"x": 3.1664390777047228,
+					"y": 17.86308138191827,
+					"z": 2.932523616734143
+				},
+				"rotation": {
+					"x": -0.04319889075718027,
+					"y": -0.056300365790885608,
+					"z": 0.5081866528514051
+				}
+			}
+		},
+		{
+			"id": "62175bef469a3004d5795990",
+			"datasetId": "61df2c877e42622a71758961",
+			"type": "cube_3d",
+			"label": "Traffic_cone",
+			"attributes": [],
+			"metadata": {
+				"system": {
+					"status": null,
+					"startTime": 0,
+					"endTime": 200,
+					"frame": 0,
+					"endFrame": 200,
+					"snapshots_": [],
+					"parentId": null,
+					"clientId": "a70ba9c0-d0eb-4591-9251-0276979e9a82",
+					"automated": false,
+					"objectId": "63",
+					"isOpen": false,
+					"isOnlyLocal": false,
+					"frameNumberBased": true,
+					"attributes": {},
+					"clientParentId": null,
+					"system": false,
+					"description": null,
+					"itemLinks": [],
+					"openAnnotationVersion": "1.32.3-prod.8",
+					"recipeId": "61d6a9d1090fd05f635b17d0"
+				},
+				"user": {}
+			},
+			"creator": "diwakar.negi@tcs.com",
+			"createdAt": "2022-02-24T10:20:31.965Z",
+			"updatedBy": "diwakar.negi@tcs.com",
+			"updatedAt": "2022-02-24T10:27:55.742Z",
+			"itemId": "61e06e0467146c2a1bfd3b9b",
+			"url": "https://gate.dataloop.ai/api/v1/annotations/62175bef469a3004d5795990",
+			"item": "https://gate.dataloop.ai/api/v1/items/61e06e0467146c2a1bfd3b9b",
+			"dataset": "https://gate.dataloop.ai/api/v1/datasets/61df2c877e42622a71758961",
+			"hash": "296f13ad2fe808a5d8904f1c8b9e32814385a42a",
+			"source": "ui",
+			"coordinates": {
+				"position": {
+					"x": 18.409118360547639,
+					"y": -22.154045671637549,
+					"z": 0.644207362188357
+				},
+				"scale": {
+					"x": 0.5967519761682338,
+					"y": 0.7376969075626279,
+					"z": 1.698471639670868
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				}
+			}
+		},
+		{
+			"id": "62175dacd6465f327d2bca17",
+			"datasetId": "61df2c877e42622a71758961",
+			"type": "cube_3d",
+			"label": "Traffic_cone",
+			"attributes": [],
+			"metadata": {
+				"system": {
+					"status": null,
+					"startTime": 0,
+					"endTime": 200,
+					"frame": 0,
+					"endFrame": 200,
+					"snapshots_": [],
+					"parentId": null,
+					"clientId": "11ca2883-f51f-4130-8cc7-2b5346d25cd6",
+					"automated": false,
+					"objectId": "64",
+					"isOpen": false,
+					"isOnlyLocal": false,
+					"frameNumberBased": true,
+					"attributes": {},
+					"clientParentId": null,
+					"system": false,
+					"description": null,
+					"itemLinks": [],
+					"openAnnotationVersion": "1.32.3-prod.8",
+					"recipeId": "61d6a9d1090fd05f635b17d0",
+					"plottingParams": {},
+					"issueTaskId": {},
+					"issueAssignmentId": {}
+				},
+				"user": {}
+			},
+			"creator": "diwakar.negi@tcs.com",
+			"createdAt": "2022-02-24T10:27:56.634Z",
+			"updatedBy": "diwakar.negi@tcs.com",
+			"updatedAt": "2022-02-24T10:27:56.634Z",
+			"itemId": "61e06e0467146c2a1bfd3b9b",
+			"url": "https://gate.dataloop.ai/api/v1/annotations/62175dacd6465f327d2bca17",
+			"item": "https://gate.dataloop.ai/api/v1/items/61e06e0467146c2a1bfd3b9b",
+			"dataset": "https://gate.dataloop.ai/api/v1/datasets/61df2c877e42622a71758961",
+			"hash": "45f34e5c67bf5b43a042ea917786829d084410ae",
+			"source": "ui",
+			"coordinates": {
+				"position": {
+					"x": 23.82672520296756,
+					"y": -31.975268820103794,
+					"z": 0.6436656015041131
+				},
+				"scale": {
+					"x": 0.5967519761682338,
+					"y": 0.7376969075626279,
+					"z": 1.698471639670868
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				}
+			}
+		}
+	],
+	"_id": "61e06e0467146c2a1bfd3b9b",
+	"filename": "/1638845660~1638845680/frames.json",
+	"metadata": {
+		"system": {
+			"originalname": "frames.json",
+			"size": 381744,
+			"encoding": "7bit",
+			"mimetype": "application/json",
+			"taskStatusLog": [],
+			"refs": [],
+			"isBinary": false,
+			"shebang": {
+				"dltype": "PCDFrames"
+			}
+		}
+	}
+}

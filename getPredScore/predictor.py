@@ -9,12 +9,14 @@ import numpy as np
 import torch
 from torchvision import transforms
 
+from models.mmdet3d.apis import inference_detector, init_model, show_result_meshlab
+
 import cv2 as cv
-from models.C3D_altered import C3D_altered
-from models.C3D_model import C3D
-from models.my_fc6 import my_fc6
-from models.score_regressor import score_regressor
-from opts import *
+#from models.C3D_altered import C3D_altered
+#from models.C3D_model import C3D
+#from models.my_fc6 import my_fc6
+#from models.score_regressor import score_regressor
+#from opts import *
 import flask
 
 app = flask.Flask(__name__)
@@ -23,11 +25,11 @@ logger.setLevel(logging.INFO)
 
 logger.info("Loading ProcessPredict function...")
 
-torch.manual_seed(randomseed)
-torch.cuda.manual_seed_all(randomseed)
-random.seed(randomseed)
-np.random.seed(randomseed)
-torch.backends.cudnn.deterministic = True
+#torch.manual_seed(randomseed)
+#torch.cuda.manual_seed_all(randomseed)
+#random.seed(randomseed)
+#np.random.seed(randomseed)
+#torch.backends.cudnn.deterministic = True
 
 current_path = os.path.abspath(os.getcwd())
 
@@ -58,8 +60,64 @@ def handler():
     aqa_data = data["aqa_data"]
     bucket = aqa_data["bucket_name"]
     key = aqa_data["object_key"]
-
     try:
+        class_names = {
+        0:'car', 1:'truck', 2:'construction_vehicle', 3:'bus', 4:'trailer',5: 'barrier',
+        6:'motorcycle', 7:'bicycle', 8:'pedestrian', 9:'traffic_cone'
+        }
+        model = init_model('models/configs/centerpoint/centerpoint_01voxel_second_secfpn_circlenms_4x8_cyclic_20e_nus.py', 'models/centerpoint_01voxel_second_secfpn_circlenms_4x8_cyclic_20e_nus_20201001_135205-5db91e00.pth', 'cuda:0')
+        temp_pcd_path = f"/tmp/{key}"
+        s3.download_file(bucket, key, temp_pcd_path + '/' + '0.pcd.bin')
+        result, dat = inference_detector(model, temp_pcd_path)
+
+        scores=result[0]['pts_bbox']['scores_3d']
+        li_bbox=[i for i in range(len(scores)) if scores[i]>0.3]
+
+        with open('models/frames.json') as file1:
+            data=json.load(file1)
+
+        li=[]
+        coun=0
+        for i in range(len(li_bbox)):
+            li.append({'id': '6214a7eb6937efeeffc34162', 'datasetId': '61df2c877e42622a71758961', 'type': 'cube_3d', 'label': 'Vehicle.Truck', 'attributes': [], 'metadata': {'system': {'status': None, 'startTime': 0, 'endTime': 200, 'frame': 0, 'endFrame': 200, 'snapshots_': [], 'parentId': None, 'clientId': 'ffbf0b57-bd11-4b95-b370-124bf893a44f', 'automated': False, 'objectId': '7', 'isOpen': False, 'isOnlyLocal': False, 'frameNumberBased': True, 'attributes': {}, 'clientParentId': None, 'system': False, 'description': None, 'itemLinks': [], 'openAnnotationVersion': '1.32.3-prod.8', 'recipeId': '61d6a9d1090fd05f635b17d0'}, 'user': {}}, 'creator': 'avi@dataloop.ai', 'createdAt': '2022-02-22T09:07:55.919Z', 'updatedBy': 'diwakar.negi@tcs.com', 'updatedAt': '2022-02-24T05:02:30.337Z', 'itemId': '61e06e0467146c2a1bfd3b9b', 'url': 'https://gate.dataloop.ai/api/v1/annotations/6214a7eb6937efeeffc34162', 'item': 'https://gate.dataloop.ai/api/v1/items/61e06e0467146c2a1bfd3b9b', 'dataset': 'https://gate.dataloop.ai/api/v1/datasets/61df2c877e42622a71758961', 'hash': '317a9d67fc54c955a079ce2e7c931ff456793d21', 'source': 'ui', 'coordinates': {'position': {'x': -10.264884948730469, 'y': -13.781776428222656, 'z': -0.2731616497039795}, 'scale': {'x': 2.8543715476989746, 'y': 12.071895599365234, 'z': 3.6031875610351562}, 'rotation': {'x': 0.0, 'y': 0.0, 'z': 1.6209666942046397e-09}}})
+            save=result[0]['pts_bbox']['boxes_3d'].tensor[li_bbox[i]]
+            li[coun]['label']=class_names[int(result[0]['pts_bbox']['labels_3d'][li_bbox[i]])]
+            li[coun]['coordinates']['position']['x']=float(save[0])
+            li[coun]['coordinates']['position']['y']=float(save[1])
+            li[coun]['coordinates']['position']['z']=float(save[2])
+            li[coun]['coordinates']['scale']['x']=float(save[3])
+            li[coun]['coordinates']['scale']['y']=float(save[4])
+            li[coun]['coordinates']['scale']['z']=float(save[5])
+            li[coun]['coordinates']['rotation']['x']=float(0.0)
+            li[coun]['coordinates']['rotation']['y']=float(0.0)
+            li[coun]['coordinates']['rotation']['z']=float(save[7])
+            #li.append(data['annotations'][i])
+            coun=coun+1
+
+        data['annotations']=li
+        with open('models/samp.json','w') as outfile:
+            json.dump(data,outfile)
+
+        show_result_meshlab(
+            dat,
+            result,
+            'models/demo',
+            0.3,
+            show=False,
+            snapshot=False,
+            task='det')
+        
+        f=open('models/samp.json')
+        response=json.dumps(json.load(f))
+        return flask.Response(response=response, status=200, mimetype='application/json')
+
+    except Exception as e:
+        print(e)
+        raise e
+    
+    
+
+    '''try:
         # Clean up old videos if there is any
         tmp_dir = "/tmp"
         tmp_items = os.listdir(tmp_dir)
@@ -76,192 +134,6 @@ def handler():
         return flask.Response(response=response, status=200, mimetype='application/json')
     except Exception as e:
         print(e)
-        raise e
+        raise e'''
 
 
-# Make prediction core function
-def make_prediction(video_file_path):
-    val = -1
-    if video_file_path:
-        frames = preprocess_one_video(video_file_path)
-        if frames.shape[2] > 400:
-            raise RuntimeError("The uploaded video is too long.")
-        preds = inference_with_one_video_frames(frames)
-        if preds is None:
-            raise RuntimeError("The uploaded video does not seem to be a diving video.")
-        val = int(preds[0] * 17)
-        logger.info("Predicted score: {}".format(val))
-    return val
-
-
-## Helper functions for processing a video and making prediction
-def center_crop(img, dim):
-    """Returns center cropped image
-
-    Args:Image Scaling
-    img: image to be center cropped
-    dim: dimensions (width, height) to be cropped from center
-    """
-    width, height = img.shape[1], img.shape[0]
-    # process crop width and height for max available dimension
-    crop_width = dim[0] if dim[0] < img.shape[1] else img.shape[1]
-    crop_height = dim[1] if dim[1] < img.shape[0] else img.shape[0]
-    mid_x, mid_y = int(width / 2), int(height / 2)
-    cw2, ch2 = int(crop_width / 2), int(crop_height / 2)
-    crop_img = img[mid_y - ch2: mid_y + ch2, mid_x - cw2: mid_x + cw2]
-    return crop_img
-
-
-def action_classifier(frames):
-    # C3D raw
-    model_C3D = C3D()
-    model_C3D.load_state_dict(torch.load(c3d_path, map_location={"cuda:0": "cpu"}))
-    model_C3D.eval()
-
-    with torch.no_grad():
-        X = torch.zeros((1, 3, 16, 112, 112))
-        frames2keep = np.linspace(0, frames.shape[2] - 1, 16, dtype=int)
-        ctr = 0
-        for i in frames2keep:
-            X[:, :, ctr, :, :] = frames[:, :, i, :, :]
-            ctr += 1
-        logger.info(f"X shape: {X.shape}")
-
-        # modifying
-        model_C3D.eval()
-
-        # perform prediction
-        X = X * 255
-        X = torch.flip(X, [1])
-        prediction = model_C3D(X)
-        prediction = prediction.data.cpu().numpy()
-
-        # print top predictions
-        top_inds = prediction[0].argsort()[::-1][
-                   :5
-                   ]  # reverse sort and take five largest items
-        logger.info("\nTop 5:")
-        logger.info(f"Top inds: {top_inds}")
-    return top_inds[0]
-
-
-def preprocess_one_video(video_file_path):
-    vf = cv.VideoCapture(video_file_path)
-    frames = None
-    while vf.isOpened():
-        ret, frame = vf.read()
-        if not ret:
-            break
-        frame = cv.cvtColor(frame, cv.COLOR_BGR2RGB)
-        frame = cv.resize(
-            frame, input_resize, interpolation=cv.INTER_LINEAR
-        )  # frame resized: (128, 171, 3)
-        frame = center_crop(frame, (H, H))
-        frame = transform(frame).unsqueeze(0)
-        if frames is not None:
-            frames = np.vstack((frames, frame))
-        else:
-            frames = frame
-
-    logger.info(f"frames shape: {frames.shape}")
-
-    vf.release()
-    cv.destroyAllWindows()
-    rem = len(frames) % 16
-    rem = 16 - rem
-
-    if rem != 0:
-        padding = np.zeros((rem, C, H, H))
-        frames = np.vstack((frames, padding))
-
-    # frames shape: (137, 3, 112, 112)
-    frames = torch.from_numpy(frames).unsqueeze(0)
-
-    logger.info(
-        f"video shape: {frames.shape}"
-    )  # video shape: torch.Size([1, 144, 3, 112, 112])
-    frames = frames.transpose_(1, 2)
-    frames = frames.double()
-    return frames
-
-
-def inference_with_one_video_frames(frames):
-    # load_weights()
-    action_class = action_classifier(frames)
-    if action_class != 463:
-        return None
-
-    model_CNN = C3D_altered()
-    model_CNN.load_state_dict(torch.load(m1_path, map_location={"cuda:0": "cpu"}))
-
-    # loading our fc6 layer
-    model_my_fc6 = my_fc6()
-    model_my_fc6.load_state_dict(torch.load(m2_path, map_location={"cuda:0": "cpu"}))
-
-    # loading our score regressor
-    model_score_regressor = score_regressor()
-    model_score_regressor.load_state_dict(
-        torch.load(m3_path, map_location={"cuda:0": "cpu"})
-    )
-    with torch.no_grad():
-        pred_scores = []
-
-        model_CNN.eval()
-        model_my_fc6.eval()
-        model_score_regressor.eval()
-
-        clip_feats = torch.Tensor([])
-        logger.info(f"frames shape: {frames.shape}")
-        for i in np.arange(0, frames.shape[2], 16):
-            clip = frames[:, :, i: i + 16, :, :]
-            model_CNN = model_CNN.double()
-            clip_feats_temp = model_CNN(clip)
-
-            # clip_feats_temp shape: torch.Size([1, 8192])
-
-            clip_feats_temp.unsqueeze_(0)
-
-            # clip_feats_temp unsqueeze shape: torch.Size([1, 1, 8192])
-
-            clip_feats_temp.transpose_(0, 1)
-
-            # clip_feats_temp transposes shape: torch.Size([1, 1, 8192])
-
-            clip_feats = torch.cat((clip_feats.double(), clip_feats_temp), 1)
-
-            # clip_feats shape: torch.Size([1, 1, 8192])
-
-        clip_feats_avg = clip_feats.mean(1)
-
-        model_my_fc6 = model_my_fc6.double()
-        sample_feats_fc6 = model_my_fc6(clip_feats_avg)
-        model_score_regressor = model_score_regressor.double()
-        temp_final_score = model_score_regressor(sample_feats_fc6)
-        pred_scores.extend(
-            [element[0] for element in temp_final_score.data.cpu().numpy()]
-        )
-
-        return pred_scores
-
-
-def load_weights():
-    cnn_loaded = os.path.isfile(m1_path)
-    fc6_loaded = os.path.isfile(m2_path)
-    score_reg_loaded = os.path.isfile(m3_path)
-    div_class_loaded = os.path.isfile(m4_path)
-    c3d_loaded = os.path.isfile(c3d_path)
-    if cnn_loaded and fc6_loaded and score_reg_loaded and div_class_loaded and c3d_loaded:
-        return
-
-    if not cnn_loaded:
-        s3.download_file(BUCKET_NAME, BUCKET_WEIGHT_CNN, m1_path)
-    if not fc6_loaded:
-        s3.download_file(BUCKET_NAME, BUCKET_WEIGHT_FC6, m2_path)
-    if not score_reg_loaded:
-        s3.download_file(BUCKET_NAME, BUCKET_WEIGHT_SCORE_REG, m3_path)
-    if not div_class_loaded:
-        s3.download_file(BUCKET_NAME, BUCKET_WEIGHT_DIV_CLASS, m4_path)
-    if not c3d_loaded:
-        urllib.request.urlretrieve(
-            "http://imagelab.ing.unimore.it/files/c3d_pytorch/c3d.pickle", c3d_path
-        )
