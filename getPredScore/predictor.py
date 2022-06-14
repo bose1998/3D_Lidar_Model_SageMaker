@@ -6,12 +6,12 @@ import urllib
 
 import boto3
 import numpy as np
-import torch
-from torchvision import transforms
+#import torch
+#from torchvision import transforms
 
-from models.mmdet3d.apis import inference_detector, init_model, show_result_meshlab
 
-import cv2 as cv
+
+#import cv2 as cv
 #from models.C3D_altered import C3D_altered
 #from models.C3D_model import C3D
 #from models.my_fc6 import my_fc6
@@ -33,12 +33,12 @@ logger.info("Loading ProcessPredict function...")
 
 current_path = os.path.abspath(os.getcwd())
 
-transform = transforms.Compose(
+'''transform = transforms.Compose(
     [
         transforms.ToTensor(),
         transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
     ]
-)
+)'''
 
 s3 = boto3.client("s3")
 
@@ -61,13 +61,14 @@ def handler():
     bucket = aqa_data["bucket_name"]
     key = aqa_data["object_key"]
     try:
+        from models.mmdet3d.apis import inference_detector, init_model, show_result_meshlab
         class_names = {
         0:'car', 1:'truck', 2:'construction_vehicle', 3:'bus', 4:'trailer',5: 'barrier',
         6:'motorcycle', 7:'bicycle', 8:'pedestrian', 9:'traffic_cone'
         }
         model = init_model('models/configs/centerpoint/centerpoint_01voxel_second_secfpn_circlenms_4x8_cyclic_20e_nus.py', 'models/centerpoint_01voxel_second_secfpn_circlenms_4x8_cyclic_20e_nus_20201001_135205-5db91e00.pth', 'cuda:0')
         temp_pcd_path = f"/tmp/{key}"
-        s3.download_file(bucket, key, temp_pcd_path + '/' + '0.pcd.bin')
+        s3.download_file(bucket, key, temp_pcd_path)
         result, dat = inference_detector(model, temp_pcd_path)
 
         scores=result[0]['pts_bbox']['scores_3d']
